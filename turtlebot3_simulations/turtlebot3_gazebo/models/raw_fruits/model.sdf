@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<sdf version='1.5'>
+  <model name='raw_fruits'>
+    <link name='link_1'>  
+      <collision name='collision_fruit'>
+        <geometry>
+          <mesh>
+            <uri>model://raw_fruits/mesh/fruits.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='fruit'>
+        <geometry>
+          <mesh>
+            <uri>model://raw_fruits/mesh/fruits.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0 0.6 0 1</ambient>
+          <diffuse>1 0.6 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <static>1</static>
+    <allow_auto_disable>1</allow_auto_disable>
+  </model>
+</sdf>
